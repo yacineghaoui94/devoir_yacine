@@ -25,7 +25,7 @@
       text-transform: uppercase;
     }
 
-    /*pour le donuts merci à https://bl.ocks.org/mbhall88/b2504f8f3e384de4ff2b9dfa60f325e2 */
+ 
     polyline {
       opacity: .3;
       stroke: black;
@@ -33,19 +33,18 @@
       fill: none;
     }
 
-    /* Make the percentage on the text labels bold*/
+   
     .labelName tspan {
       font-style: normal;
       font-weight: 700;
     }
 
-    /* In biology we generally italicise species names. */
+   
     .labelName {
       font-size: 0.9em;
       font-style: italic;
     }
 
-    /*merci à https://www.codeply.com/go/rNFv5RJJqn/bootstrap-modal-full-screen */
     .modal-full {
       min-width: 100%;
       margin: 0;
@@ -146,7 +145,7 @@
   
     function RechercheByAGE() {
 	
-      //document.getElementById("searchByName").value = "";
+      
       var x = document.getElementById("selectParcours").value;
       localStorage.setItem("selectedParcours", x);
       if (x == "") {
@@ -446,12 +445,11 @@ var csv_data;
             .attr('height', hSvg)
             .append('g')
             .attr('transform', 'translate(' + wSvg / 2 + ',' + (hSvg - 10) / 2 + ')');
-          // ===========================================================================================
-          // g elements to keep elements within svg modular
+         
+      
           svg.append('g').attr('class', 'slices');
           svg.append('g').attr('class', 'labelName');
-          svg.append('g').attr('class', 'lines');
-          // ===========================================================================================
+        
 
          
           var path = svg.select('.slices')
